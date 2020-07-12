@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+    <title>Filter Project</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container1">
+            <header>
+                <img src="https://romeojeremiah.github.io/Filter-Project/img/logo.svg" alt="Doughnut" class="logo">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#store">Store</a>
+                    </li>
+                </ul>
+                <div class="box">
+                    <div class="contactNo">
+                        <svg width=".8em" height=".8em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+                        </svg>
+                        <p>+123 456 789</p>
+                    </div>
+                
+
+                    <div class="cartbox">
+                        <svg width=".8em" height=".8em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                        </svg>
+                        <p>Items</p>
+                    </div>
+                </div>
+            </header>
+
+            <div id="welcome">
+                <h1>Welcome To <span>Grandma's</span></h1>
+                <a href="#store">EXPLORE</a>
+            </div>
+        </div>
+        <div id="about" class="grid-container2">
+            <div class="about-info">
+                <h2>About <span class = headings>Us</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eaque ipsa placeat eligendi eius. Cupiditate enim impedit consequatur labore velit commodi explicabo, unde, quibusdam maiores ipsa voluptatem? Amet, molestias nobis!</p>
+                <a href="#store">EXPLORE</a>
+            </div>
+            <div class="image-slide">
+                <img src="https://romeojeremiah.github.io/Filter-Project/img/sweets-1.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="grid-container3">
+        <div id="store">
+            <h2>Our <span class = headings>Store</span></h2>
+            <button onclick="showAll()">ALL</button>
+            <button class="storeBtn" onclick="showCakes()">CAKES</button>
+            <button class="storeBtn" onclick="showCupcakes()">CUPCAKES</button>
+            <button class="storeBtn" onclick="showSweets()">SWEETS</button>
+            <button class="storeBtn" onclick="showDoughnuts()">DOUGHNUTS</button>
+        </div>
+        <div class="search-bar">
+            <span>
+                <label for="itemsBar"></label>
+                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                </svg>
+            </span>
+                <input type="text" placeholder="items..." >
+        </div>
+        <div class="items">
+            
+        </div>
+    </div>
+    <script src="items.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
